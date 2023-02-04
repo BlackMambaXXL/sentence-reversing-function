@@ -7,10 +7,11 @@ function reverse(str) {
     for (let i = 0; i < arr.length; i++) {
         innerArr[i] = arr[i].split("");
         innerArr[i].reverse();
-        innerArr[i].join("");
-
     }
-    console.log(innerArr);
+
+    let reversedArr = innerArr.join(" ");
+    reversedArr = reversedArr.split(",").join("");
+    console.log(reversedArr);
 }
 
 reverse(someString);
